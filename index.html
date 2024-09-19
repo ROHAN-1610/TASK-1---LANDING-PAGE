@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">LANDING PAGE</div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#features">Features</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <video autoplay muted loop class="background-video">
+            <source src="assets\videos\mountain.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1 class="typewriter">Welcome to the Future of Web Design</h1>
+            <a href="#about" id="learn-more-btn" class="cta-btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We bring innovation to the forefront of web design, creating responsive, user-friendly experiences that captivate and convert.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Cutting-edge, scalable web solutions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, user-centric designs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>SEO Optimization</h3>
+                    <p>Rank higher, reach farther.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="assets/images/web_design.png" alt="Feature 1">
+                    <h3>Responsive Design</h3>
+                    <p>Adapts to all devices.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/images/make-your-website-load-faster.jpg" alt="Feature 2">
+                    <h3>Fast Loading</h3>
+                    <p>Optimized for speed.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets\images\modern_asthetics.png" alt="Feature 3">
+                    <h3>Modern Aesthetics</h3>
+                    <p>Clean, professional look.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Drop us a message and let's start creating something amazing together.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <h2>Subscribe to our Newsletter</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RohanVerma. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="facebook.png" alt="Facebook" width="30" height="30"><br>Facebook
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="twitter (1).png" alt="Twitter" width="30" height="30"><br>Twitter
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="linkedlin.png" alt="LinkedIn" width="30" height="30"><br>LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
